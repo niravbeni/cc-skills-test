@@ -1,4 +1,4 @@
-const CACHE_NAME = 'claude-pulse-v1';
+const CACHE_NAME = 'claude-design-test-v1';
 const urlsToCache = [
   './',
   './index.html',

@@ -1,6 +1,6 @@
 {
-  "name": "Claude Pulse - Health-Conscious AI",
-  "short_name": "Claude Pulse",
+  "name": "Claude Design Test",
+  "short_name": "Claude Design",
   "description": "A prototype exploring health-conscious AI interaction patterns",
   "start_url": "./index.html",
   "display": "standalone",
