@@ -245,96 +245,242 @@
             background: linear-gradient(135deg, #c96a49, #e89c7f);
         }
 
-        /* Mobile-2 Theme - Duplicate of Mobile for customization */
+        /* Mobile-2 Theme - Claude Mobile with Figma Design Tokens */
         body.theme-mobile-2 {
-            background-color: #f5f4f0;
+            background-color: #FAFAF7; /* Figma Ivory Light */
         }
 
         body.theme-mobile-2 .header {
-            background-color: #f5f4f0;
-            color: var(--dark);
-            border-bottom: none;
-            padding: 20px 20px 16px;
+            background-color: #FAFAF7; /* Figma Ivory Light */
+            color: #191919; /* Figma Slate Dark */
+            border-bottom: 1px solid #E5E4DF; /* Figma Ivory Dark */
+            padding: 16px 20px;
         }
 
         body.theme-mobile-2 .logo {
-            font-size: 22px;
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 600;
+            color: #191919; /* Figma Slate Dark */
         }
 
         body.theme-mobile-2 .context-badge {
             background-color: transparent;
             border: none;
-            color: var(--mid-gray);
+            color: #666663; /* Figma Cloud Dark */
             padding: 0;
             font-size: 13px;
         }
 
         body.theme-mobile-2 .mode-selector {
-            background-color: #f5f4f0;
-            border-bottom: none;
+            background-color: #FAFAF7; /* Figma Ivory Light */
+            border-bottom: 1px solid #E5E4DF; /* Figma Ivory Dark */
             padding: 12px 20px;
         }
 
         body.theme-mobile-2 .mode-btn {
-            border: 1px solid #d4d2cc;
-            background-color: white;
-            color: var(--dark);
+            border: 1px solid #BFBFBA; /* Figma Cloud Light */
+            background-color: #FFFFFF; /* Figma White */
+            color: #191919; /* Figma Slate Dark */
             border-radius: 20px;
             padding: 10px 18px;
         }
 
         body.theme-mobile-2 .mode-btn.active {
-            background-color: #c96a49;
-            color: white;
-            border-color: #c96a49;
+            background-color: #D97757; /* Figma UI Orange */
+            color: #FFFFFF; /* Figma White */
+            border-color: #D97757; /* Figma UI Orange */
         }
 
         body.theme-mobile-2 .chat-container {
-            background-color: #f5f4f0;
+            background-color: #FAFAF7; /* Figma Ivory Light */
         }
 
         body.theme-mobile-2 .message.user .message-bubble {
-            background-color: #e8e7e3;
-            color: var(--dark);
+            background-color: #E5E4DF; /* Figma Ivory Dark */
+            color: #191919; /* Figma Slate Dark */
             border-radius: 20px;
             box-shadow: none;
         }
 
         body.theme-mobile-2 .message.assistant .message-bubble {
-            background-color: white;
-            color: var(--dark);
-            border: none;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            background-color: #FFFFFF; /* Figma White */
+            color: #191919; /* Figma Slate Dark */
+            border: 1px solid #F0F0EB; /* Figma Ivory Medium */
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
             border-radius: 20px;
         }
 
         body.theme-mobile-2 .input-wrapper {
-            background-color: #f5f4f0;
-            border-top: none;
+            background-color: #FAFAF7; /* Figma Ivory Light */
+            border-top: 1px solid #E5E4DF; /* Figma Ivory Dark */
             padding: 12px 20px 20px;
         }
 
         body.theme-mobile-2 .input-container {
-            background-color: white;
-            border: 1px solid #d4d2cc;
+            background-color: #FFFFFF; /* Figma White */
+            border: 1px solid #BFBFBA; /* Figma Cloud Light */
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
             border-radius: 26px;
             padding: 12px 16px;
         }
 
         body.theme-mobile-2 .context-panel {
-            background-color: rgba(0, 0, 0, 0.03);
-            border: none;
+            background-color: #F0F0EB; /* Figma Ivory Medium */
+            border: 1px solid #E5E4DF; /* Figma Ivory Dark */
             border-radius: 16px;
         }
 
         body.theme-mobile-2 .session-bar {
-            background-color: #e8e7e3;
+            background-color: #E5E4DF; /* Figma Ivory Dark */
         }
 
         body.theme-mobile-2 .wellness-prompt {
-            background: linear-gradient(135deg, #c96a49, #e89c7f);
+            background: linear-gradient(135deg, #D97757, #CC785C); /* Figma UI Orange to Book Cloth */
+        }
+
+        /* Mobile-2 Header Layout */
+        body.theme-mobile-2 .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        body.theme-mobile-2 .header-left {
+            flex: 0;
+        }
+
+        body.theme-mobile-2 .logo {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        body.theme-mobile-2 .header-icon-btn {
+            background: none;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+            color: #191919;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        body.theme-mobile-2 .header-icon-btn:hover {
+            background-color: #F0F0EB;
+        }
+
+        body.theme-mobile-2 .model-dropdown {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: none;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #191919;
+            cursor: pointer;
+            padding: 6px 10px;
+            border-radius: 8px;
+            transition: background-color 0.2s ease;
+        }
+
+        body.theme-mobile-2 .model-dropdown:hover {
+            background-color: #F0F0EB;
+        }
+
+        body.theme-mobile-2 .model-dropdown svg {
+            color: #D97757; /* Figma UI Orange for Claude icon */
+        }
+
+        /* Mobile-2 Message Actions */
+        body.theme-mobile-2 .message-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #F0F0EB;
+        }
+
+        body.theme-mobile-2 .action-btn {
+            background: none;
+            border: none;
+            color: #666663;
+            font-size: 13px;
+            padding: 6px 10px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        body.theme-mobile-2 .action-btn:hover {
+            background-color: #F0F0EB;
+            color: #191919;
+        }
+
+        body.theme-mobile-2 .action-btn svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        /* Mobile-2 Figma Button Styles */
+        body.theme-mobile-2 .attach-btn {
+            background: none;
+            border: none;
+            color: #666663;
+            padding: 8px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body.theme-mobile-2 .attach-btn:hover {
+            background-color: #F0F0EB;
+            color: #191919;
+        }
+
+        body.theme-mobile-2 .wellness-btn {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        body.theme-mobile-2 .wellness-btn:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        body.theme-mobile-2 .wellness-btn.primary {
+            background-color: white;
+            color: #D97757;
+            border-color: white;
+        }
+
+        body.theme-mobile-2 .wellness-btn.primary:hover {
+            background-color: #F0F0EB;
+        }
+
+        /* Hide context badge and project badge in Mobile-2 */
+        body.theme-mobile-2 .context-badge {
+            display: none;
+        }
+
+        body.theme-mobile-2 .project-badge {
+            display: none;
         }
 
         .header-left {
@@ -1242,6 +1388,29 @@
     </div>
 
     <script>
+        // Figma SVG Icons
+        const ICONS = {
+            menu: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>`,
+            plus: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>`,
+            attachment: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>`,
+            voice: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z" stroke="currentColor" stroke-width="2"/>
+                <path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4M8 23h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>`,
+            chevronDown: `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>`,
+            claudeIcon: `<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.92 13.3L7.86 11.1L7.92 10.9L7.86 10.8H7.66L7 10.76L4.76 10.7L2.8 10.6L0.9 10.5L0.42 10.4L0 9.8L0.04 9.5L0.44 9.24L1.02 9.28L2.28 9.38L4.18 9.5L5.56 9.58L7.6 9.82H7.92L7.96 9.68L7.86 9.6L7.78 9.52L5.8 8.2L3.68 6.8L2.56 5.98L1.96 5.58L1.66 5.18L1.54 4.34L2.08 3.74L2.82 3.8L3 3.84L3.74 4.42L5.34 5.64L7.4 7.2L7.7 7.44L7.82 7.36L7.84 7.3L7.7 7.08L6.6 5L5.4 2.92L4.86 2.06L4.72 1.54C4.66 1.34 4.64 1.14 4.64 0.94L5.24 0.1L5.6 0L6.44 0.12L6.76 0.4L7.28 1.6L8.1 3.46L9.4 5.98L9.8 6.74L10 7.42L10.06 7.62H10.2V7.52L10.3 6.08L10.5 4.34L10.7 2.1L10.76 1.46L11.08 0.7L11.68 0.3L12.2 0.52L12.6 1.1L12.54 1.46L12.32 3L11.8 5.42L11.5 7.06H11.68L11.88 6.84L12.7 5.76L14.08 4.04L14.68 3.34L15.4 2.6L15.86 2.24H16.72L17.34 3.18L17.06 4.16L16.18 5.28L15.44 6.22L14.38 7.64L13.74 8.78L13.8 8.86H13.94L16.34 8.34L17.62 8.12L19.14 7.86L19.84 8.18L19.92 8.5L19.64 9.18L18 9.58L16.08 9.98L13.22 10.64L13.18 10.66L13.22 10.72L14.5 10.84L15.06 10.88H16.42L18.94 11.08L19.6 11.48L19.98 12.02L19.92 12.42L18.9 12.94L17.54 12.62L14.34 11.86L13.26 11.6H13.1V11.68L14.02 12.58L15.68 14.08L17.8 16.02L17.9 16.5L17.64 16.9L17.36 16.86L15.52 15.46L14.8 14.86L13.2 13.5H13.1V13.64L13.46 14.18L15.42 17.12L15.52 18.02L15.38 18.3L14.86 18.5L14.32 18.38L13.16 16.78L11.96 14.98L11.02 13.34L10.92 13.42L10.34 19.46L10.08 19.76L9.48 20L8.98 19.6L8.7 19L8.98 17.76L9.3 16.16L9.56 14.88L9.8 13.3L9.94 12.78V12.74H9.8L8.6 14.4L6.8 16.86L5.36 18.38L5.02 18.52L4.42 18.22L4.48 17.66L4.8 17.2L6.8 14.64L8 13.06L8.8 12.14L8.78 12.04H8.72L3.44 15.48L2.5 15.6L2.1 15.2L2.14 14.6L2.34 14.4L3.94 13.3H3.92Z" fill="currentColor"/>
+            </svg>`
+        };
+
         // Theme Toggle
         const themeButtons = document.querySelectorAll('.theme-option-btn');
         const body = document.body;
@@ -1260,6 +1429,119 @@
             }
         });
 
+        // Update header, messages, and input for Mobile-2 theme
+        function updateHeaderForTheme(theme) {
+            const header = document.querySelector('.header');
+            const inputContainer = document.querySelector('.input-container');
+
+            if (theme === 'mobile-2') {
+                // Create Mobile-2 header structure
+                header.innerHTML = `
+                    <button class="header-icon-btn" onclick="toggleMenu()">
+                        ${ICONS.menu}
+                    </button>
+                    <button class="model-dropdown" onclick="toggleModelPicker()">
+                        ${ICONS.claudeIcon}
+                        <span>Sonnet 4.5</span>
+                        ${ICONS.chevronDown}
+                    </button>
+                    <button class="header-icon-btn" onclick="newChat()">
+                        ${ICONS.plus}
+                    </button>
+                `;
+
+                // Update input container with Figma icons
+                inputContainer.innerHTML = `
+                    <button class="attach-btn">${ICONS.attachment}</button>
+                    <input type="text" class="input-field" placeholder="How can Claude help you today?" id="inputField">
+                    <button class="attach-btn">${ICONS.voice}</button>
+                `;
+
+                // Add action buttons to assistant messages
+                addMessageActions();
+            } else {
+                // Restore original header structure
+                header.innerHTML = `
+                    <div class="header-left">
+                        <div class="logo">Claude</div>
+                        <div class="context-badge">
+                            <div class="context-icon"></div>
+                            <span>Aware</span>
+                        </div>
+                    </div>
+                    <div class="session-indicator">
+                        <div class="session-bar"></div>
+                    </div>
+                `;
+
+                // Restore original input container
+                inputContainer.innerHTML = `
+                    <button class="attach-btn">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/>
+                        </svg>
+                    </button>
+                    <input type="text" class="input-field" placeholder="How can Claude help you today?" id="inputField">
+                    <div class="project-badge">
+                        <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                        <span>Use project</span>
+                    </div>
+                `;
+
+                // Remove action buttons from messages
+                removeMessageActions();
+            }
+        }
+
+        // Add action buttons to assistant messages for Mobile-2
+        function addMessageActions() {
+            const copyIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="9" y="9" width="13" height="13" rx="2" ry="2" stroke-width="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" stroke-width="2"/></svg>`;
+            const retryIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M1 4v6h6M23 20v-6h-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.49 9A9 9 0 005.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 013.51 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+            document.querySelectorAll('.message.assistant .message-bubble').forEach(bubble => {
+                // Check if actions already exist
+                if (!bubble.querySelector('.message-actions')) {
+                    const actionsDiv = document.createElement('div');
+                    actionsDiv.className = 'message-actions';
+                    actionsDiv.innerHTML = `
+                        <button class="action-btn" onclick="copyMessage(this)">
+                            ${copyIcon}
+                            <span>Copy</span>
+                        </button>
+                        <button class="action-btn" onclick="retryMessage(this)">
+                            ${retryIcon}
+                            <span>Retry</span>
+                        </button>
+                    `;
+                    bubble.appendChild(actionsDiv);
+                }
+            });
+        }
+
+        // Remove action buttons from messages
+        function removeMessageActions() {
+            document.querySelectorAll('.message-actions').forEach(actions => {
+                actions.remove();
+            });
+        }
+
+        // Message action handlers
+        function copyMessage(btn) {
+            const bubble = btn.closest('.message-bubble');
+            const text = bubble.textContent.replace(/CopyRetry/, '').trim();
+            navigator.clipboard.writeText(text);
+            btn.innerHTML = btn.innerHTML.replace('Copy', 'Copied');
+            setTimeout(() => {
+                btn.innerHTML = btn.innerHTML.replace('Copied', 'Copy');
+            }, 2000);
+        }
+
+        function retryMessage(btn) {
+            console.log('Retrying message...');
+        }
+
         // Handle theme switching
         themeButtons.forEach(button => {
             button.addEventListener('click', () => {
@@ -1275,8 +1557,27 @@
 
                 // Save preference
                 localStorage.setItem('claudeDesignTheme', theme);
+
+                // Update header for Mobile-2
+                updateHeaderForTheme(theme);
             });
         });
+
+        // Initialize header on load
+        updateHeaderForTheme(savedTheme);
+
+        // Placeholder functions for Mobile-2 interactions
+        function toggleMenu() {
+            console.log('Menu toggled');
+        }
+
+        function toggleModelPicker() {
+            console.log('Model picker toggled');
+        }
+
+        function newChat() {
+            console.log('New chat started');
+        }
 
         // Time-based context
         function updateTimeContext() {
